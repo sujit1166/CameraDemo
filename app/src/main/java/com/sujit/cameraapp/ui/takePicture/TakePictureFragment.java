@@ -1,6 +1,7 @@
-package com.sujit.cameraapp.ui.home;
+package com.sujit.cameraapp.ui.takePicture;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,14 +15,23 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.sujit.cameraapp.R;
 
-public class HomeFragment extends Fragment {
+public class TakePictureFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private TakePictureViewModel homeViewModel;
+
+    private static final String TAG = "TakePictureFragment";
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.e(TAG, "onCreate: " );
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
+                ViewModelProviders.of(this).get(TakePictureViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
         homeViewModel.getText().observe(this, new Observer<String>() {

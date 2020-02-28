@@ -1,6 +1,7 @@
 package com.sujit.cameraapp.ui.dashboard;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,14 @@ import com.sujit.cameraapp.R;
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
+    private static final String TAG = "DashboardFragment";
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.e(TAG, "onCreate: " );
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
