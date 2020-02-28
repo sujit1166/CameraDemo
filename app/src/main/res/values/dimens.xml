@@ -2,4 +2,42 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="font_small_10">10sp</dimen>
+    <dimen name="font_medium_12">12sp</dimen>
+    <dimen name="font_large_14">14sp</dimen>
+    <dimen name="font_xlarge_16">16sp</dimen>
+    <dimen name="font_xxlarge_18">18sp</dimen>
+    <dimen name="font_xxxlarge_20">20sp</dimen>
+    <dimen name="font_xxxxlarge_25">25sp</dimen>
+    <dimen name="font_xxxxxlarge_30">30sp</dimen>
+
+    <dimen name="padding_Xsmall_8">8dp</dimen>
+    <dimen name="padding_small_10">10dp</dimen>
+    <dimen name="padding_medium_12">12dp</dimen>
+    <dimen name="padding_large_14">14dp</dimen>
+    <dimen name="padding_xlarge_16">16dp</dimen>
+    <dimen name="padding_xxlarge_18">18dp</dimen>
+    <dimen name="padding_xxxlarge_20">20dp</dimen>
+    <dimen name="padding_xxxxlarge_25">25dp</dimen>
+    <dimen name="padding_xxxxxlarge_30">30dp</dimen>
+
+
+    <dimen name="margin_xsmall_8">8dp</dimen>
+    <dimen name="margin_small_10">10dp</dimen>
+    <dimen name="margin_medium_12">12dp</dimen>
+    <dimen name="margin_large_14">14dp</dimen>
+    <dimen name="margin_xlarge_16">16dp</dimen>
+    <dimen name="margin_xxlarge_18">18dp</dimen>
+    <dimen name="margin_xxxlarge_20">20dp</dimen>
+    <dimen name="margin_xxxxlarge_25">25dp</dimen>
+    <dimen name="margin_xxxxxlarge_30">30dp</dimen>
+
+
+
+
+    <dimen name="card_view_elevation">5dp</dimen>
+    <dimen name="card_view_image_elevation">4dp</dimen>
+    <dimen name="card_view_corner_radius">3.5dp</dimen>
+
 </resources>
