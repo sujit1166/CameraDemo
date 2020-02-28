@@ -11,12 +11,12 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 @Singleton
-public class GitRepoViewModelFactory implements ViewModelProvider.Factory {
+public class CameraDemoViewModelFactory implements ViewModelProvider.Factory {
 
     private final Map<Class<? extends ViewModel>, Provider<ViewModel>> creators;
 
     @Inject
-    public GitRepoViewModelFactory(Map<Class<? extends ViewModel>, Provider<ViewModel>> creators) {
+    public CameraDemoViewModelFactory(Map<Class<? extends ViewModel>, Provider<ViewModel>> creators) {
         this.creators = creators;
     }
 

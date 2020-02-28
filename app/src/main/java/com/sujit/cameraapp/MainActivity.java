@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        initFragments();
+    }
+
+
+    public void initFragments(){
         fragment1 = new TakePictureFragment();
         fragment2 = new DashboardFragment();
         fm = getSupportFragmentManager();
@@ -34,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
         fm.beginTransaction().add(R.id.main_container, fragment2, "2").hide(fragment2).commit();
         fm.beginTransaction().add(R.id.main_container, fragment1, "1").commit();
-
     }
 
 

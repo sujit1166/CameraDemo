@@ -1,7 +1,7 @@
 package com.sujit.cameraapp.di.module;
 
 
-import com.sujit.cameraapp.di.GitRepoViewModelFactory;
+import com.sujit.cameraapp.di.CameraDemoViewModelFactory;
 import com.sujit.cameraapp.ui.dashboard.DashboardViewModel;
 import com.sujit.cameraapp.ui.takePicture.TakePictureViewModel;
 
@@ -15,7 +15,7 @@ import dagger.multibindings.IntoMap;
 public abstract class ViewModelModule {
 
     @Binds
-    abstract ViewModelProvider.Factory bindViewModelFactory(GitRepoViewModelFactory gitRepoViewModelFactory);
+    abstract ViewModelProvider.Factory bindViewModelFactory(CameraDemoViewModelFactory cameraDemoViewModelFactory);
 
     @Binds
     @IntoMap
