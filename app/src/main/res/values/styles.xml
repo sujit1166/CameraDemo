@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="AppCompatButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/font_xlarge_16</item>
+        <item name="android:paddingTop">@dimen/margin_xsmall_8</item>
+        <item name="android:paddingBottom">@dimen/margin_xsmall_8</item>
+        <item name="android:paddingLeft">@dimen/padding_xxxxlarge_25</item>
+        <item name="android:paddingRight">@dimen/padding_xxxxlarge_25</item>
+        <item name="android:background">@drawable/button_accent</item>
+    </style>
+
+
 </resources>
