@@ -9,6 +9,8 @@ buildscript {
         material_version = "28.0.0"
         okhttp_version = "3.12.8"
         rxandroid_version = "2.1.1"
+        picasso_version = "2.71828"
+
     }
 
     repositories {

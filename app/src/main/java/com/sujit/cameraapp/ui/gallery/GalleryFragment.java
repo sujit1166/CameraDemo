@@ -1,11 +1,10 @@
-package com.sujit.cameraapp.ui.dashboard;
+package com.sujit.cameraapp.ui.gallery;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -15,10 +14,10 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.sujit.cameraapp.R;
 
-public class DashboardFragment extends Fragment {
+public class GalleryFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
-    private static final String TAG = "DashboardFragment";
+    private GalleryViewModel galleryViewModel;
+    private static final String TAG = "GalleryFragment";
 
 
     @Override
@@ -29,11 +28,11 @@ public class DashboardFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel.class);
+        galleryViewModel =
+                ViewModelProviders.of(this).get(GalleryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
 //        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(this, new Observer<String>() {
+        galleryViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
 //                textView.setText(s);
