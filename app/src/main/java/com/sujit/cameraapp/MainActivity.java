@@ -29,15 +29,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-        initFragments();
+        fm = getSupportFragmentManager();
+        if (savedInstanceState==null) {
+            initFragments();
+        }
     }
 
 
     public void initFragments(){
         fragment1 = new TakePictureFragment();
         fragment2 = new GalleryFragment();
-        fm = getSupportFragmentManager();
         active = fragment1;
 
         fm.beginTransaction().add(R.id.main_container, fragment2, "2").hide(fragment2).commit();

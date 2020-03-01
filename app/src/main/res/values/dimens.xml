@@ -39,5 +39,7 @@
     <dimen name="card_view_elevation">5dp</dimen>
     <dimen name="card_view_image_elevation">4dp</dimen>
     <dimen name="card_view_corner_radius">3.5dp</dimen>
+    <dimen name="item_margin">1dp</dimen>
+
 
 </resources>

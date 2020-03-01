@@ -24,32 +24,29 @@ import com.sujit.cameraapp.ui.showImage.ImageDisplayActivity;
 import java.io.File;
 import java.io.IOException;
 
+import javax.inject.Inject;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import static android.app.Activity.RESULT_OK;
 import static com.sujit.cameraapp.AppConstants.IMAGE_PATH;
 
 public class TakePictureFragment extends Fragment implements View.OnClickListener {
 
-    private TakePictureViewModel homeViewModel;
-    TakePictureFragmentBinding fragmentBinding;
-
     private static final String TAG = "TakePictureFragment";
 
-    ImageView ivTakePicture;
-
+    @Inject
+    ViewModelProvider.Factory viewModelFactory;
+    TakePictureFragmentBinding fragmentBinding;
     private static final int PERMISSION_CODE = 1000;
-    Uri imageUri;
-    private int IMAGE_CAPTURE_CODE = 1001;
-
-
+    static final int REQUEST_TAKE_PHOTO = 1001;
     String currentPhotoPath;
-    static final int REQUEST_TAKE_PHOTO = 1;
 
 
     @Override
@@ -138,7 +135,6 @@ public class TakePictureFragment extends Fragment implements View.OnClickListene
                 storageDir      /* directory */
         );
 
-        // Save a file: path for use with ACTION_VIEW intents
         currentPhotoPath = image.getAbsolutePath();
         Log.e(TAG, "createImageFile: " + currentPhotoPath);
         return image;
