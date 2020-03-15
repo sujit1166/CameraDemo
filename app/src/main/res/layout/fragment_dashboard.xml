@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:maxEms="15"
-                android:text="@string/title_dashboard"
+                android:text="@string/title_gallery"
                 android:textColor="@color/white" />
         </androidx.appcompat.widget.Toolbar>
 

@@ -38,7 +38,7 @@ import static com.sujit.cameraapp.AppConstants.IMAGE_PATH;
 
 public class TakePictureFragment extends Fragment implements View.OnClickListener {
 
-    private static final String TAG = "TakePictureFragment";
+    private String TAG = getClass().getSimpleName();
 
     @Inject
     ViewModelProvider.Factory viewModelFactory;
@@ -51,6 +51,8 @@ public class TakePictureFragment extends Fragment implements View.OnClickListene
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.e(TAG, "onCreate: ");
+//        setRetainInstance(true);
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -63,6 +65,7 @@ public class TakePictureFragment extends Fragment implements View.OnClickListene
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Log.e(TAG, "onViewCreated: ");
         initView();
     }
 

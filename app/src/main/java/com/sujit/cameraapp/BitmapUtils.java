@@ -7,7 +7,6 @@ import android.graphics.Matrix;
 import android.media.ExifInterface;
 import android.os.Build;
 
-import com.squareup.picasso.Picasso;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -126,7 +125,7 @@ public class BitmapUtils {
                 return;
             }
 
-            Picasso.get().invalidate(imageFile);
+//            Picasso.get().invalidate(imageFile);
 
             try {
                 tempFile.delete();
